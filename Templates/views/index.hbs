@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB SERVERS</title>
+
+
+
+<link rel="stylesheet" type="text/css" href="/styel.css">   
+</head>
+<body>
+
+    {{!-- <h1>Home Page HBS</h1> --}}
+
+   {{>header}}
+
+
+    {{!-- <h3 style="color: red;">{{title}}</h3> --}}
+
+    <!-- <script src="/public/web.js"></script> -->
+
+
+    {{!-- <img src="https://www.southindiafashion.com/wp-content/uploads/2021/10/Shraddha-Kapoor-in-a-red-saree-by-Yam-India-3.jpg" alt=""> --}}
+    
+
+    <div class="content">
+
+
+    
+    <h1>{{title}}</h1>
+
+
+<img src="/weatherpic.jpg" alt="Weather Icon">
+
+    <p>Use This Site to get the Weather of the Desired city!</p>
+
+
+
+
+
+    <form> 
+
+
+        <input type="text" , placeholder="Enter Location">
+
+        <button>Search</button>
+    </form>
+
+
+    <p id="msg-1"></p> 
+    <p id="msg-2"></p>
+    </div>
+
+
+
+
+    
+
+    {{>footer}}
+</body>
+
+{{!-- <script src="/web.js"></script> --}}
+
+{{!-- <script src="/Templates/JS/fetch.js"></script> --}}
+<script src="/web.js"></script>
+</html>
