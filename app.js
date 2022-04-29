@@ -4,6 +4,7 @@ const forecast = require ('./utils/forecast')
 const geocode = require('./utils/geocode')
 const path = require('path')
 const hbs = require('hbs')
+const port = process.env.PORT || 3000
 
 console.log(__dirname)
 // console.log(__filename)
@@ -183,7 +184,7 @@ app.get('/*', (req, res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
 
-    console.log('port has been up at port no. 3000')
+    console.log('port has been up at port no.' + port)
 })
